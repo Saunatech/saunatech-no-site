@@ -1,23 +1,32 @@
-# Saunatech AS Verification Site
+# Saunatech AS Company Site
 
-This repository contains a static verification/compliance website for **Saunatech AS** at `saunatech.no`.
+This repository contains the static company, support, compliance, and brand asset website for **Saunatech AS** at `www.saunatech.no`.
 
-This is **not** the main consumer marketing site. It is intended for:
-
-- company verification details,
-- support contact details,
-- privacy/terms/refund policy pages used by partners such as Stripe and Apple.
+BookSauna product pages and product legal documents are canonical on `https://booksauna.app`.
 
 ## Pages
 
-- `index.html` - Home and company overview.
-- `support.html` - Support and legal/privacy contact details.
-- `privacy.html` - Privacy policy for the website and platform services.
-- `terms.html` - Website terms of use.
-- `sms-verification-terms.html` - SMS verification terms for one-time account security codes.
-- `refunds.html` - General refunds and cancellations policy.
+- `index.html` - Company overview and links to BookSauna.
+- `support.html` - Saunatech AS support and company contact details.
+- `brand-assets.html` - Public Saunatech logo URLs for email signatures and approved brand use.
+- `privacy.html` - Redirects to the canonical BookSauna Privacy Policy.
+- `terms.html` - Redirects to the canonical BookSauna Terms of Service.
+- `sms-verification-terms.html` - Redirects to the canonical BookSauna SMS Verification Terms.
+- `refunds.html` - Redirects to the BookSauna Terms of Service, where cancellation and refund terms are covered.
 - `404.html` - Not found page.
 - `assets/css/main.css` - Shared stylesheet for all pages.
+- `assets/logos/` - Public Saunatech logo files.
+
+## Canonical BookSauna Links
+
+- Book saunas: `https://booksauna.app/home`
+- List your sauna: `https://booksauna.app/partners`
+- Support/contact: `https://booksauna.app/contact`
+- Privacy Policy: `https://booksauna.app/privacy`
+- Terms of Service: `https://booksauna.app/terms`
+- Cookie Policy: `https://booksauna.app/cookie-policy`
+- SMS Verification Terms: `https://booksauna.app/sms-verification-terms`
+- Wellness Consent: `https://booksauna.app/wellness-consent`
 
 ## Publish on GitHub Pages
 
