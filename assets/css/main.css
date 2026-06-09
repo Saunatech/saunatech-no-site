@@ -247,25 +247,26 @@ main {
     margin: 0.4rem 0;
 }
 
-.legal-table {
-    width: 100%;
+.policy-grid {
+    display: grid;
+    gap: 1rem;
     margin: 1rem 0;
-    border-collapse: collapse;
-    overflow-wrap: anywhere;
 }
 
-.legal-table th,
-.legal-table td {
-    padding: 0.75rem;
+.policy-item {
+    padding: 1rem;
     border: 1px solid var(--border);
-    text-align: left;
-    vertical-align: top;
+    border-radius: 14px;
+    background: var(--snow);
 }
 
-.legal-table th {
-    background: var(--mist);
-    color: var(--fjord-deep);
-    font-size: 0.85rem;
+.policy-item h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.policy-item .eyebrow {
+    margin-bottom: 0.35rem;
 }
 
 .asset-grid {
@@ -416,56 +417,6 @@ p {
         gap: 0.8rem;
     }
 
-    .legal-table,
-    .legal-table thead,
-    .legal-table tbody,
-    .legal-table tr,
-    .legal-table th,
-    .legal-table td {
-        display: block;
-    }
-
-    .legal-table {
-        border-collapse: separate;
-        border-spacing: 0;
-    }
-
-    .legal-table thead {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-    }
-
-    .legal-table tr {
-        margin: 0 0 0.85rem;
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        background: var(--surface);
-        overflow: hidden;
-    }
-
-    .legal-table td {
-        border: 0;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .legal-table td:last-child {
-        border-bottom: 0;
-    }
-
-    .legal-table td::before {
-        content: attr(data-label);
-        display: block;
-        margin-bottom: 0.18rem;
-        color: var(--muted);
-        font-size: 0.72rem;
-        font-weight: 700;
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-    }
 }
 
 @media (min-width: 720px) {
@@ -475,5 +426,9 @@ p {
 
     .asset-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .policy-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
